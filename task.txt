@@ -11,3 +11,15 @@ Aufgabe:
 4. Erweitere Dein Authentication-Server so, dass sich alle
    Nutzer einloggen können und dass jeder Nutzer außer "ralf"
    auf "/content" zugreifen kann. Alle dürfen auf "/private" zugreifen.
+
+
+Task #1:
+Create a delete route which deletes blog posts.
+Task #2:
+Create a seperate Edit route localhost:3000/edit/:id.
+On this route reuse your new-post-form and fill it with the content of the post which is currently edited.
+Change the title and submit the post to a POST update method.
+This method searches the post, updates its contents and redirects to the Edit route - displaying the new contents
+Task #3:
+Use (Bcrypt)[https://www.npmjs.com/package/bcrypt] to hash your password
+For this create a new javascript file which get run by node and accepts a argv: node hashpw.js password and it returns the hash. (bearbeitet) 
